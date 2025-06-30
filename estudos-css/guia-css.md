@@ -2,6 +2,126 @@
 
 > Versão profissional e aplicada — do básico ao avançado
 
+# Propriedades CSS Essenciais e Explicações
+
+---
+
+## Texto
+
+- `color`: Define a cor do texto.  
+  Ex: `color: #333;`
+
+- `font-family`: Define a fonte do texto.  
+  Ex: `font-family: Arial, sans-serif;`
+
+- `font-size`: Define o tamanho da fonte.  
+  Ex: `font-size: 16px;`
+
+- `font-weight`: Define a espessura da fonte (normal, bold, números).  
+  Ex: `font-weight: 700;`
+
+- `text-align`: Alinha o texto (left, center, right, justify).  
+  Ex: `text-align: center;`
+
+- `text-transform`: Transforma o texto (uppercase, lowercase, capitalize).  
+  Ex: `text-transform: uppercase;`
+
+- `line-height`: Espaçamento entre linhas.  
+  Ex: `line-height: 1.5;`
+
+- `letter-spacing`: Espaçamento entre letras.  
+  Ex: `letter-spacing: 2px;`
+
+---
+
+## Espaçamento
+
+- `margin`: Espaço externo ao elemento.  
+  Ex: `margin: 10px;`
+
+- `padding`: Espaço interno do elemento.  
+  Ex: `padding: 10px;`
+
+---
+
+## Tamanho e Layout
+
+- `width`: Largura do elemento.  
+  Ex: `width: 100px;`
+
+- `height`: Altura do elemento.  
+  Ex: `height: 50px;`
+
+- `max-width`: Largura máxima permitida.  
+  Ex: `max-width: 500px;`
+
+- `min-height`: Altura mínima permitida.  
+  Ex: `min-height: 100px;`
+
+- `display`: Define o tipo de exibição.  
+  Ex: `display: block;`, `display: inline;`, `display: flex;`, `display: grid;`
+
+- `position`: Define o posicionamento.  
+  Ex: `position: static;`, `position: relative;`, `position: absolute;`, `position: fixed;`, `position: sticky;`
+
+- `top`, `bottom`, `left`, `right`: Define a posição do elemento (quando `position` não for static).  
+  Ex: `top: 10px;`
+
+- `z-index`: Ordem de sobreposição de elementos.  
+  Ex: `z-index: 100;`
+
+---
+
+## Estilo Visual
+
+- `border`: Borda do elemento.  
+  Ex: `border: 1px solid #000;`
+
+- `border-radius`: Arredonda os cantos.  
+  Ex: `border-radius: 8px;`
+
+- `box-shadow`: Sombra do elemento.  
+  Ex: `box-shadow: 0 0 10px rgba(0,0,0,0.3);`
+
+- `background-color`: Cor de fundo.  
+  Ex: `background-color: #fff;`
+
+- `background-image`: Imagem de fundo.  
+  Ex: `background-image: url('imagem.jpg');`
+
+- `background-size`: Tamanho da imagem de fundo.  
+  Ex: `background-size: cover;`
+
+---
+
+## Flexbox
+
+- `display: flex;` — ativa o Flexbox.
+- `flex-direction: row | column;` — define a direção dos itens.
+- `justify-content: center | space-between | space-around;` — alinha itens horizontalmente.
+- `align-items: center | stretch;` — alinha itens verticalmente.
+- `gap: 10px;` — espaçamento entre itens.
+
+---
+
+## Grid Layout
+
+- `display: grid;` — ativa o Grid Layout.
+- `grid-template-columns: repeat(3, 1fr);` — define colunas iguais.
+- `grid-gap: 10px;` — espaço entre linhas e colunas.
+
+---
+
+## Responsividade
+
+- Media Queries:
+
+````css
+@media (max-width: 768px) {
+  /* regras para telas menores */
+}
+
+
 ---
 
 ## 🔢 Índice
@@ -34,7 +154,7 @@ CSS (Cascading Style Sheets) é a linguagem de estilo usada para controlar visua
 
 ```html
 <link rel="stylesheet" href="css/style.css" />
-```
+````
 
 ## 3. Sintaxe
 
@@ -47,13 +167,18 @@ seletor {
 ## 4. Seletores
 
 ```css
-p {}
-.titulo {}
-#menu {}
-nav ul {}
-section > h2 {}
-*
-a:hover {}
+p {
+}
+.titulo {
+}
+#menu {
+}
+nav ul {
+}
+section > h2 {
+}
+* a:hover {
+}
 ```
 
 ## 5. Unidades
@@ -152,8 +277,12 @@ a:hover {}
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 ```
 
@@ -191,7 +320,7 @@ a {
 }
 
 .btn {
-  background: #3B82F6;
+  background: #3b82f6;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -199,7 +328,7 @@ a {
 }
 
 .btn:hover {
-  background: #2563EB;
+  background: #2563eb;
 }
 ```
 
@@ -208,12 +337,12 @@ a {
 ```css
 :root {
   --bg-main: #121212;
-  --bg-card: #1E1E2F;
-  --border-soft: #2A2A3C;
-  --text-main: #E0E0E0;
-  --text-secondary: #A0A0B0;
-  --btn-primary: #3B82F6;
-  --btn-hover: #2563EB;
+  --bg-card: #1e1e2f;
+  --border-soft: #2a2a3c;
+  --text-main: #e0e0e0;
+  --text-secondary: #a0a0b0;
+  --btn-primary: #3b82f6;
+  --btn-hover: #2563eb;
   --neutral-icon: #606078;
 }
 ```
